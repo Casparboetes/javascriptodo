@@ -120,6 +120,18 @@
       todoCount.innerHTML = uncompletedTodos;
     }
 
+    function toggleDone() {
+      var checkbox = this;
+
+      if(checkbox.checked) {
+        checkbox.parentElement.classname = "todo completed";
+      } else {
+        checkbox.parentElement.classname = "todo";
+      }
+
+      updateCounters();
+    }
+
   updateCounters();
 
   </script>
